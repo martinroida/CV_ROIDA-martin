@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Martín Roida | Administrativo</title>
+    <style>
+        :root {
+            --azul-principal: #4A76A8;
+            --gris-fondo-perfil: #E9F0F7;
+            --gris-texto: #555;
+            --borde-suave: #ddd;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        /* Contenedor del botón superior */
+        .top-bar {
+            max-width: 850px;
+            margin: 0 auto 15px auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        /* Estilo del botón de descarga */
+        .btn-descarga {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 18px;
+            background-color: #ffffff;
+            color: var(--azul-principal);
+            border: 2px solid var(--azul-principal);
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+
+        .btn-descarga:hover {
+            background-color: var(--azul-principal);
+            color: #ffffff;
+        }
+
+        /* Hoja de vida / Contenedor principal */
+        .cv-container {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Encabezado */
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 2px solid var(--azul-principal);
+            padding: 3px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: var(--azul-principal);
+            font-size: 2.2em;
+            margin: 10px 0;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            border-top: 1px solid var(--borde-suave);
+            border-bottom: 1px solid var(--borde-suave);
+            padding: 12px 0;
+            font-size: 0.9em;
+            color: var(--gris-texto);
+            line-height: 1.6;
+        }
+
+        /* Cuadro de perfil */
+        .summary-box {
+            background-color: var(--gris-fondo-perfil);
+            padding: 20px 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+            line-height: 1.6;
+        }
+
+        /* Secciones */
+        h2 {
+            color: var(--azul-principal);
+            border-bottom: 1px solid var(--borde-suave);
+            padding-bottom: 8px;
+            margin-top: 35px;
+            font-size: 1.5em;
+        }
+
+        .item {
+            margin-bottom: 25px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .item-sub {
+            color: #777;
+            font-style: normal;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* Etiquetas de habilidades */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skill-tag {
+            background-color: var(--gris-fondo-perfil);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            color: #333;
+            border: 1px solid #cedbe7;
+        }
+
+        /* Estilos de impresión */
+        @media print {
+            body { background: none; padding: 0; }
+            .cv-container { box-shadow: none; width: 100%; padding: 0; }
+            .top-bar { display: none; } /* No imprime el botón de descarga */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <!-- Botón de descarga que enlaza al archivo PDF -->
+        <a href="CV-Martin-Roida_Administrativo.pdf" class="btn-descarga" download>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Descarga versión en PDF
+        </a>
+    </div>
+
+    <div class="cv-container">
+
+        <header class="header">
+            <img src="profile_pic.png" alt="Foto de Perfil" class="profile-pic">
+            <h1>Martín ROIDA</h1>
+            <div class="contact-info">
+                3537-677431 • Bell Ville, Córdoba, 2550, Argentina • martindarioroida@gmail.com <br>
+                <a target="_blank" href="https://www.linkedin.com/in/martinroida/" style="color: inherit; text-decoration: none;">https://www.linkedin.com/in/martinroida/</a>
+            </div>
+        </header>
+
+        <section class="summary-box">
+            Profesional con más de 15 años de experiencia en administración, facturación y atención al público, con formación en Desarrollo de Software y sólidos conocimientos en sistemas de gestión y herramientas digitales. Soy ordenado y puedo adaptarme fácilmente a equipos de trabajo.
+        </section>
+
+        <section>
+            <h2>Experiencia laboral</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Auxiliar administrativo y vendedor</span>
+                    <span>03/2011 – Presente</span>
+                </div>
+                <div class="item-sub">Groppo Construcción • Bell Ville</div>
+                <ul>
+                    <li>Facturación y seguimiento de cuentas corrientes mediante sistemas Anubis y Atila.</li>
+                    <li>Control y archivo de documentación fiscal (facturas, remitos, notas de crédito).</li>
+                    <li>Coordinación de pedidos, emisión de remitos y verificación de entregas.</li>
+                    <li>Implementación de mejoras en Excel para gestión de compras anticipadas y control de saldos.</li>
+                    <li>Ejecución de inventarios y elaboración de reportes de stock.</li>
+                    <li>Atención presencial y telefónica, garantizando satisfacción y fidelización de clientes.</li>
+                    <li>Gestión de consultas y pedidos vía WhatsApp Business y redes sociales, elaboración de cotizaciones y acompañamiento al cliente durante el proceso de compra.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Administrativo</span>
+                    <span>07/2004 – 02/2011</span>
+                </div>
+                <div class="item-sub">Rochaix Repuestos • Bell Ville</div>
+                <ul>
+                    <li>Facturación y seguimiento de cuentas corrientes.</li>
+                    <li>Ejecución de cobranzas y arqueo de caja.</li>
+                    <li>Confección de órdenes de pago a proveedores.</li>
+                    <li>Control y archivo de comprobantes fiscales.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Educación</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span>Téc. Superior en Desarrollo de Software</span>
+                    <span>03/2018 – 12/2020</span>
+                </div>
+                <div class="item-sub">Inst. Superior Dr. Ramón Carrillo • Bell Ville</div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span>Bachiller - Administración</span>
+                    <span>03/1997 – 12/2003</span>
+                </div>
+                <div class="item-sub">IPEM N° 140 D. F. Sarmiento • Bell Ville</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Habilidades</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Facturación</span>
+                <span class="skill-tag">Control de cuentas corrientes</span>
+                <span class="skill-tag">Seguimiento de pedidos</span>
+                <span class="skill-tag">Atención al público</span>
+                <span class="skill-tag">Resolución de consultas y reclamos</span>
+                <span class="skill-tag">Anubis</span>
+                <span class="skill-tag">Atila</span>
+                <span class="skill-tag">Excel</span>
+                <span class="skill-tag">Inventarios</span>
+                <span class="skill-tag">Reportes</span>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
